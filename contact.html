@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact // gjvongraves.com</title>
+    <style>
+        :root {
+            --terminal-green: #39FF14;
+            --bg-black: #000;
+            --dim-gray: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--terminal-green);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .breadcrumb {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--terminal-green);
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .contact-card {
+            border: 1px solid var(--dim-gray);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-card:hover {
+            border-color: var(--terminal-green);
+            background-color: #050505;
+        }
+
+        .label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+        .value a {
+            color: var(--terminal-green);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .value a:hover {
+            border-bottom: 1px solid var(--terminal-green);
+        }
+
+        .note {
+            font-size: 0.8rem;
+            margin-top: 10px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .footer-nav {
+            margin-top: 50px;
+            border-top: 1px solid var(--dim-gray);
+            padding-top: 20px;
+        }
+
+        /* Mobile specific spacing */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .value { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="breadcrumb">root / config / contact_methods</div>
+        
+        <h1>Connect</h1>
+
+        <div class="contact-grid">
+            
+            <div class="contact-card">
+                <span class="label">Secure Email</span>
+                <span class="value"><a href="mailto:security@gjvongraves.com">security@gjvongraves.com</a></span>
+            </div>
+
+            <div class="contact-card">
+                <span class="label">Voice / SMS</span>
+                <span class="value">281-826-1002</span>
+                <span class="note">Business Only. Please leave a message.</span>
+            </div>
+
+            <div class="contact-card">
+                <span class="label">Discord Handle</span>
+                <span class="value">von_on_disc</span>
+            </div>
+
+            <div class="contact-card">
+                <span class="label">Social Footprint</span>
+                <span class="value">
+                    X: <a href="https://x.com/von_on_x" target="_blank">von_on_x</a><br>
+                    TikTok: <a href="https://tiktok.com/@von_on_tok" target="_blank">von_on_tok</a>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="footer-nav">
+            <a href="index.html" style="color: var(--terminal-green); text-decoration: none;"><-- RETURN_TO_HOME</a>
+        </div>
+    </div>
+
+</body>
+</html>
