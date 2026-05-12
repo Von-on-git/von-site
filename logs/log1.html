@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Entry: [TITLE HERE]</title>
+    <style>
+        :root {
+            --terminal-green: #39FF14;
+            --dim-green: #32CD32;
+            --bg-black: #000;
+            --surface-gray: #111;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--terminal-green);
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.8; /* Increased for better readability */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .top-nav a { color: var(--terminal-green); text-decoration: none; }
+
+        header { margin-bottom: 50px; }
+        
+        h1 { 
+            font-size: 2.2rem; 
+            text-transform: uppercase; 
+            margin: 10px 0;
+            line-height: 1.1;
+        }
+
+        .timestamp { font-size: 0.8rem; color: #888; }
+
+        /* The Rant Styling */
+        h2 { 
+            color: #fff; 
+            border-left: 4px solid var(--terminal-green); 
+            padding-left: 15px; 
+            margin-top: 50px;
+            font-size: 1.4rem;
+        }
+
+        p { margin-bottom: 25px; font-size: 1.1rem; color: #ccc; }
+
+        /* Blockquotes for "The Struggle" */
+        blockquote {
+            margin: 40px 0;
+            padding: 20px;
+            background: var(--surface-gray);
+            border-left: 4px solid #fff;
+            font-style: italic;
+            color: #eee;
+        }
+
+        /* Learning/Technical Highlights */
+        .insight-box {
+            border: 1px dashed var(--terminal-green);
+            padding: 20px;
+            margin: 40px 0;
+            background: rgba(57, 255, 20, 0.05);
+        }
+
+        /* Mobile-First Image Design */
+        .visual-log {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .visual-log img {
+            width: 100%;
+            height: auto;
+            border: 1px solid var(--terminal-green);
+            filter: brightness(0.8) contrast(1.2); /* Hacker vibe */
+        }
+        .caption { 
+            font-size: 0.8rem; 
+            margin-top: 10px; 
+            color: var(--dim-green); 
+        }
+
+        /* Bottom Navigation */
+        footer {
+            margin-top: 80px;
+            border-top: 1px solid #222;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        .back-btn { 
+            color: var(--terminal-green); 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            p { font-size: 1rem; }
+            .container { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="top-nav">
+            <a href="../oscp.html"><-- BACK TO OSCP_JOURNEY</a>
+        </nav>
+
+        <header>
+            <div class="timestamp">LOG_ID: 024 // DATE: 2026-05-12</div>
+            <h1>The "Click" Moment: Mastering Privilege Escalation</h1>
+        </header>
+
+        <article>
+            <p>Today was a grind. Spent 6 hours staring at a shell that wouldn't budge. I was ready to quit, but then I remembered why I'm here. This isn't just about the cert; it's about the transformation.</p>
+
+            <blockquote>
+                "The wall is there for a reason. It's not to keep us out, it's to see how badly we want it." 
+            </blockquote>
+
+            <h2>What I Learned</h2>
+            <p>I finally understood the relationship between misconfigured setuid binaries and the actual exploit path. It’s not just a list of commands to run—it’s about understanding the permissions assigned to the system files.</p>
+
+            <div class="visual-log">
+                <img src="../images/struggle-graph.png" alt="Graph showing study hours vs comprehension">
+                <div class="caption">Figure 1: My mental state vs. the complexity of the lab.</div>
+            </div>
+
+            <div class="insight-box">
+                <strong>KEY INSIGHT:</strong> Always check the `sudo -l` output first. Don't over-complicate the path until you've checked the low-hanging fruit.
+            </div>
+
+            <p>Locking back in now. Tomorrow we tackle the next node.</p>
+        </article>
+
+        <footer>
+            <a href="../oscp.html" class="back-btn"><-- RETURN TO JOURNEY_LOG</a>
+        </footer>
+    </div>
+
+</body>
+</html>
