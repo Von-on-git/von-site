@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write-up: [LAB NAME]</title>
+    <style>
+        /* Core Terminal Colors */
+        :root {
+            --terminal-green: #39FF14;
+            --dim-green: #32CD32;
+            --bg-black: #000000;
+            --code-bg: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--terminal-green);
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0; /* Handled by container */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px; /* Essential padding for mobile edges */
+        }
+
+        /* Responsive Header */
+        h1 { 
+            font-size: 1.8rem; 
+            border-bottom: 2px solid var(--terminal-green); 
+            padding-bottom: 10px; 
+            text-transform: uppercase;
+            word-wrap: break-word; /* Prevents long titles from breaking mobile layout */
+        }
+
+        .breadcrumb { font-size: 0.8rem; margin-bottom: 15px; opacity: 0.7; }
+        .breadcrumb a { color: var(--terminal-green); text-decoration: none; }
+        
+        .metadata { 
+            font-size: 0.75rem; 
+            margin-bottom: 25px; 
+            color: #888;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Content Sections */
+        h2 { 
+            font-size: 1.2rem; 
+            color: #fff; 
+            background: #111; 
+            padding: 8px 12px; 
+            display: block; 
+            margin-top: 35px;
+            border-left: 4px solid var(--terminal-green);
+        }
+
+        p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+        
+        /* Mobile-Friendly Code Blocks */
+        pre { 
+            background: var(--code-bg); 
+            padding: 15px; 
+            border-radius: 4px;
+            overflow-x: auto; /* Allows side-scrolling for long commands on mobile */
+            white-space: pre-wrap; /* Wraps text if it's too long */
+            word-break: break-all;
+            font-size: 0.9rem;
+            color: #fff;
+            border: 1px solid #333;
+        }
+
+        /* Phenomenal Image Handling */
+        .screenshot-box {
+            margin: 25px 0;
+            text-align: center;
+        }
+        .screenshot-box img {
+            width: 100%; /* Scales to screen width */
+            height: auto;
+            border: 1px solid var(--terminal-green);
+            border-radius: 4px;
+            display: block;
+        }
+        .caption { 
+            font-size: 0.8rem; 
+            margin-top: 10px; 
+            color: var(--dim-green); 
+            font-style: italic; 
+        }
+
+        /* Navigation */
+        .footer-nav { 
+            margin-top: 50px; 
+            border-top: 1px solid #333; 
+            padding: 20px 0; 
+        }
+        .back-btn { 
+            color: var(--terminal-green); 
+            text-decoration: none; 
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* MOBILE OPTIMIZATIONS (The "Phenomenal" part) */
+        @media (max-width: 600px) {
+            .post-container { padding: 15px; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.1rem; }
+            p { font-size: 1rem; }
+            pre { font-size: 0.8rem; padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="post-container">
+        <div class="breadcrumb">
+            <a href="../index.html">root</a> / <a href="../oscp.html">oscp_log</a> / write-up
+        </div>
+
+        <header>
+            <h1>[Lab Name: Target Machine]</h1>
+            <div class="metadata">
+                <span>DATE: 2026-05-12</span>
+                <span>|</span>
+                <span>CAT: PEN-TESTING</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>01. Executive Summary</h2>
+            <p>Briefly describe the objective. High-level, clear, and direct.</p>
+        </section>
+
+        <section>
+            <h2>02. Tactical Execution</h2>
+            <p>Paste your terminal commands below. On mobile, these will wrap so you don't have to scroll horizontally to read them.</p>
+            <pre># Example: Running an aggressive Nmap scan
+nmap -A -T4 -p- 10.10.10.x</pre>
+        </section>
+
+        <!-- IMAGE SLOT 1 -->
+        <div class="screenshot-box">
+            <img src="../images/placeholder.png" alt="Screenshot of terminal output">
+            <div class="caption">Fig 1: Identifying open ports and service versions.</div>
+        </div>
+
+        <section>
+            <h2>03. Critical Findings</h2>
+            <p>This is where you explain the "Why." What did you see in **Wireshark** or **Nmap** that gave you the next clue?</p>
+        </section>
+
+        <!-- IMAGE SLOT 2 -->
+        <div class="screenshot-box">
+            <img src="../images/placeholder2.png" alt="Screenshot of exploit code">
+            <div class="caption">Fig 2: Analyzing the response headers for version vulnerabilities.</div>
+        </div>
+
+        <div class="footer-nav">
+            <a href="../oscp.html" class="back-btn"><-- LOG_LIST</a>
+        </div>
+    </div>
+
+</body>
+</html>
