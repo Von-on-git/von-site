@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Von's OSCP Journey</title>
+    <style>
+        /* Terminal Aesthetic */
+        body {
+            background-color: #000000;
+            color: #39FF14; /* Neon/Terminal Green */
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .terminal-container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #39FF14;
+            display: inline-block;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: #32CD32; /* Slightly dimmer green for subtext */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
+        }
+
+        nav a {
+            color: #39FF14;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav a:hover {
+            background-color: #39FF14;
+            color: #000;
+        }
+
+        /* The Blinking Cursor */
+        .cursor {
+            display: inline-block;
+            width: 12px;
+            height: 24px;
+            background-color: #39FF14;
+            margin-left: 5px;
+            vertical-align: middle;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            from, to { background-color: transparent; }
+            50% { background-color: #39FF14; }
+        }
+
+        .back-link {
+            margin-top: 3rem;
+            display: block;
+            font-size: 0.9rem;
+            color: #32CD32;
+            text-decoration: none;
+        }
+
+        .back-link:before {
+            content: "<-- ";
+        }
+
+        footer {
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            text-align: right;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-container">
+        <header>
+            <h1>Von's OSCP Journey</h1>
+            <p class="description">A personal log of progress, study, and growth toward my certification goal. Houston, Texas. Dedicated to the cybersecurity path.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li>[1] <a href="#initial">Initial Assessment</a></li>
+                <li>[2] <a href="#nmap">Nmap & Enumeration</a></li>
+                <li>[3] <a href="#privesc">Privilege Escalation</a></li>
+                <li>[4] <a href="#wireshark">Wireshark Analysis</a></li>
+                <li>[5] <a href="#logs">Lab Logs</a></li>
+                <li>[6] <a href="#current">Current Labs</a><span class="cursor"></span></li>
+            </ul>
+        </nav>
+
+        <a href="index.html" class="back-link">Return to Main Terminal</a>
+
+        <footer>
+            EST. 2026
+        </footer>
+    </div>
+
+</body>
+</html>
