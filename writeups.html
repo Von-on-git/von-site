@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Von's Technical Write-ups</title>
+    <style>
+        :root {
+            --terminal-green: #39FF14;
+            --bg-black: #000000;
+            --border-gray: #333;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--terminal-green);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--terminal-green);
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        h1 { font-size: 2rem; text-transform: uppercase; margin: 0; }
+        .subtitle { font-size: 0.9rem; opacity: 0.8; margin-top: 10px; }
+
+        /* Navigation */
+        .nav-links { margin-bottom: 30px; font-size: 0.9rem; }
+        .nav-links a { color: var(--terminal-green); text-decoration: none; }
+
+        /* The Write-up List */
+        .writeup-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .writeup-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--border-gray);
+            padding: 15px 20px;
+            text-decoration: none;
+            color: var(--terminal-green);
+            transition: all 0.2s ease;
+        }
+
+        .writeup-item:hover {
+            background-color: #111;
+            border-color: var(--terminal-green);
+        }
+
+        .machine-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .machine-icon { font-size: 1.5rem; }
+        
+        .machine-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .date-badge {
+            font-size: 0.8rem;
+            background: #1a1a1a;
+            padding: 4px 8px;
+            border: 1px solid var(--border-gray);
+            color: #888;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .writeup-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .date-badge { align-self: flex-end; }
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: right;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">root</a> / <a href="oscp.html">oscp_journey</a> / writeups
+        </div>
+
+        <header>
+            <h1>Technical Write-ups</h1>
+            <p class="subtitle">Documentation of box completions, lab findings, and vulnerability research.</p>
+        </header>
+
+        <div class="writeup-list">
+            
+            <!-- BOILERPLATE POST 1 (Copy/Paste this block for new posts) -->
+            <a href="posts/example-post.html" class="writeup-item">
+                <div class="machine-info">
+                    <span class="machine-icon">🖥️</span>
+                    <div>
+                        <div class="machine-name">Target: Lame</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">Platform: HackTheBox</div>
+                    </div>
+                </div>
+                <div class="date-badge">MAY 2026</div>
+            </a>
+
+            <!-- BOILERPLATE POST 2 -->
+            <a href="posts/example-post-2.html" class="writeup-item">
+                <div class="machine-info">
+                    <span class="machine-icon">📟</span>
+                    <div>
+                        <div class="machine-name">Lab: Wireshark Analysis</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">Focus: Traffic Forensics</div>
+                    </div>
+                </div>
+                <div class="date-badge">APR 2026</div>
+            </a>
+
+            <!-- ADD NEW POSTS BELOW THIS LINE -->
+
+        </div>
+
+        <footer>
+            VON // CYBERSECURITY PORTFOLIO // EST. 2026
+        </footer>
+    </div>
+
+</body>
+</html>
